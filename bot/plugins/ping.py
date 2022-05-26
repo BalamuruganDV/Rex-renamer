@@ -1,5 +1,4 @@
-# (c) @AbirHasan2005
-
+from configs import config
 from bot.client import Client
 from pyrogram import filters
 from pyrogram import types
