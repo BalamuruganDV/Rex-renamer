@@ -23,3 +23,9 @@ class Config(object):
     MONGODB_URI = os.environ.get("MONGODB_URI", "")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-100"))
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
+    START_TXT = """
+    Hi {name}, I am Rename Bot!   
+    I can rename media without downloading it!"
+    Speed depends on your media DC."
+    Just send me media and reply to it with /rename command.
+    """
