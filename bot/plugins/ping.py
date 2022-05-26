@@ -5,7 +5,7 @@ from pyrogram import filters
 from pyrogram import types
 from bot.core.db.add import add_user_to_database
 
-name=m.from_user.first_name
+name=message.from_user.mention
 @Client.on_message(filters.command(["start", "ping"]) & filters.private & ~filters.edited)
 async def ping_handler(c: Client, m: "types.Message"):
     if not m.from_user:
