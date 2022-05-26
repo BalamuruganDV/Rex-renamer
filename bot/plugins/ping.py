@@ -11,7 +11,7 @@ async def ping_handler(c: Client, m: "types.Message"):
     await add_user_to_database(c, m)
     await c.send_flooded_message(
         chat_id=m.chat.id,
-        text=configs.START_TXT.format(name=m.from_user.mention),
+        text=START_TXT.format(name=m.from_user.mention),
         reply_markup=types.InlineKeyboardMarkup([[
            types.InlineKeyboardButton("Show Settings",
                                       callback_data="showSettings")
