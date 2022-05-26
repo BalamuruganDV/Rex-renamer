@@ -1,5 +1,3 @@
-# (c) @AbirHasan2005
-
 import traceback
 from typing import Union
 from bot.client import Client
@@ -61,7 +59,7 @@ async def handle_big_rename(
                   if _f_thumb
                   else None)
         if thumbnail_file_id:
-            await editable.edit("Fetching Thumbnail ...")
+            await editable.edit("🖼 Fetching Thumbnail ...")
             thumb_path = await c.download_media(thumbnail_file_id,
                                                 f"{Config.DOWNLOAD_DIR}/{m.from_user.id}/{m.message_id}/")
             if _db_thumb:
@@ -97,7 +95,7 @@ async def handle_big_rename(
                   if _f_thumb
                   else None)
         if thumbnail_file_id:
-            await editable.edit("Fetching Thumbnail ...")
+            await editable.edit("🖼 Fetching Thumbnail ...")
             thumb_path = await c.download_media(thumbnail_file_id,
                                                 f"{Config.DOWNLOAD_DIR}/{m.from_user.id}/{m.message_id}/")
             if _db_thumb:
@@ -142,7 +140,7 @@ async def handle_big_rename(
                   if _f_thumb
                   else None)
         if thumbnail_file_id:
-            await editable.edit("Fetching Thumbnail ...")
+            await editable.edit("🖼 Fetching Thumbnail ...")
             thumb_path = await c.download_media(thumbnail_file_id,
                                                 f"{Config.DOWNLOAD_DIR}/{m.from_user.id}/{m.message_id}/")
             if _db_thumb:
